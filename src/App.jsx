@@ -8,6 +8,7 @@ import ProductDetails from "./views/ProductDetails";
 import Cart from "./views/Cart";
 import Login from "./views/Login";
 import Orders from "./views/Orders";
+import OrderDetails from "./views/OrderDetails";
 
 const theme = createTheme({
   typography: {
@@ -36,6 +37,7 @@ function App() {
             <Route path="/login" element={<Login />} />
 
             <Route path="/orders" element={<Orders />} />
+            <Route path="/orders/:orderId" element={<OrderDetails />} />
           </Routes>
         </Container>
       </Router>
