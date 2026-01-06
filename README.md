@@ -5,8 +5,6 @@
 
 Projekt przedstawia prosty sklep internetowy stworzony w React, z wykorzystaniem mock backendu oraz FakeStoreAPI. Aplikacja umożliwia przeglądanie produktów, rejestrację i logowanie użytkowników, zarządzanie koszykiem oraz historią zamówień.
 
----
-
 ## 1. Wykorzystane technologie
 
 Build Tool: Vite
@@ -39,29 +37,29 @@ localStorage pełni rolę uproszczonej bazy danych
 
 ### Funkcjonalności – Paweł
 
-System logowania
+#### System logowania
 Obsługa uwierzytelniania użytkowników na podstawie danych zapisanych w localStorage oraz plikach JSON, generowanie tokenów sesji.
 
-Autoryzacja (Security Guard)
+#### Autoryzacja (Security Guard)
 Blokada możliwości zakupu dla użytkowników niezalogowanych (przekierowanie do strony logowania).
 
-Historia zamówień
+#### Historia zamówień
 Widok umożliwiający użytkownikowi przegląd wcześniejszych zamówień powiązanych z kontem.
 
-Szczegóły produktu
+#### Szczegóły produktu
 Dynamiczna strona produktu generowana na podstawie ID, prezentująca nazwę, opis, cenę oraz zdjęcie produktu.
 
 ### Funkcjonalności – Justyna
 
-Rejestracja użytkownika
+#### Rejestracja użytkownika
 Tworzenie nowych kont z walidacją danych i zapisem do localStorage.
 
-Wyszukiwanie i strona główna
+#### Wyszukiwanie i strona główna
 Wyszukiwanie produktów w czasie rzeczywistym oraz layout strony głównej.
 
-Koszyk
+#### Koszyk
 Zarządzanie produktami w koszyku (dodawanie, usuwanie, obliczanie łącznej ceny) z zapisem stanu w sesji.
 
-System ocen
+#### System ocen
 Możliwość dodawania opinii i komentarzy do produktów.
 
