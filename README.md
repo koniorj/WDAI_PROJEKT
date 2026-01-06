@@ -1,26 +1,67 @@
-Dokumentacja Projektu - Sklep Internetowy
-Autorzy: Justyna Konior, Paweł Pochwalski
+# Sklep Internetowy – Dokumentacja
+**Autorzy:**  
+- Justyna Konior  
+- Paweł Pochwalski  
 
-1. Wykorzystane technologie
+Projekt przedstawia prosty sklep internetowy stworzony w React, z wykorzystaniem mock backendu oraz FakeStoreAPI. Aplikacja umożliwia przeglądanie produktów, rejestrację i logowanie użytkowników, zarządzanie koszykiem oraz historią zamówień.
+
+---
+
+## 1. Wykorzystane technologie
 
 Build Tool: Vite
 
-Frontend: React
+Frontend: React.js
 
-Biblioteki UI: Material UI
+UI: Material UI (MUI)
 
-Zarządzanie stanem: React Context API (dla koszyka i sesji logowania)
+Routing: React Router DOM
 
-Komunikacja z API: Axios (pobieranie danych z https://fakestoreapi.com/)
+Zarządzanie stanem: React Context API
 
-2. Funkcjonalności
+Komunikacja z API: Axios
 
-Pobieranie i wyświetlanie listy produktów.
+Źródło danych: FakeStoreAPI (https://fakestoreapi.com/)
 
-Szczegóły produktu z możliwością dodania opinii.
+Przechowywanie danych: localStorage (mock backend)
 
-Funkcjonalny koszyk (dodawanie, usuwanie, przeliczanie wartości).
+## 2. Architektura danych i backend (mock)
 
-System logowania z obsługą sesji.
+Dane użytkowników, sesji oraz koszyka przechowywane są w localStorage
 
-Historia zamówień.
+Symulacja backendu („mock backend”) oparta o pliki JSON
+
+Autoryzacja oparta o JWT + refresh token
+
+localStorage pełni rolę uproszczonej bazy danych
+
+## 3. Funkcjonalności
+
+### Funkcjonalności – Paweł
+
+System logowania
+Obsługa uwierzytelniania użytkowników na podstawie danych zapisanych w localStorage oraz plikach JSON, generowanie tokenów sesji.
+
+Autoryzacja (Security Guard)
+Blokada możliwości zakupu dla użytkowników niezalogowanych (przekierowanie do strony logowania).
+
+Historia zamówień
+Widok umożliwiający użytkownikowi przegląd wcześniejszych zamówień powiązanych z kontem.
+
+Szczegóły produktu
+Dynamiczna strona produktu generowana na podstawie ID, prezentująca nazwę, opis, cenę oraz zdjęcie produktu.
+
+### Funkcjonalności – Justyna
+
+Rejestracja użytkownika
+Tworzenie nowych kont z walidacją danych i zapisem do localStorage.
+
+Wyszukiwanie i strona główna
+Wyszukiwanie produktów w czasie rzeczywistym oraz layout strony głównej.
+
+Koszyk
+Zarządzanie produktami w koszyku (dodawanie, usuwanie, obliczanie łącznej ceny) z zapisem stanu w sesji.
+
+System ocen
+Możliwość dodawania opinii i komentarzy do produktów.
+
