@@ -29,7 +29,7 @@ Dane użytkowników, sesji oraz koszyka przechowywane są w localStorage
 
 Symulacja backendu („mock backend”) oparta o pliki JSON
 
-Autoryzacja oparta o JWT + refresh token
+Autoryzacja oparta mock token
 
 localStorage pełni rolę uproszczonej bazy danych
 
